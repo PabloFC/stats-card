@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 600px;
+  border: 1px solid black;
+}
+
+.right-side {
+  display: flex;
+  justify-content: space-around;
+}
