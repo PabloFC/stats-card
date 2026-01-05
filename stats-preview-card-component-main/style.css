@@ -85,8 +85,9 @@ span {
 
 .stats {
   display: flex;
-  justify-content: space-between;
-  gap: 60px;
+  justify-content: flex-start;
+  padding: 0px 6px;
+  gap: 50px;
 }
 
 .stats h2 {
