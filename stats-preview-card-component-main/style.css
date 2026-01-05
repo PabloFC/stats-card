@@ -35,7 +35,7 @@ span {
 
 .container {
   background-color: var(--primaryNavy950);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,4 +102,35 @@ span {
   letter-spacing: 1px;
   color: var(--whiteStatsHeadings);
   font-family: "Lexend Deca", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    max-width: 375px;
+    margin: 28px;
+  }
+
+  .left-side {
+    order: 2;
+    text-align: center;
+    padding: 40px 32px;
+  }
+
+  .right-side {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .title h1 {
+    font-size: 28px;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 24px;
+  }
 }
